@@ -1,0 +1,23 @@
+<form action="signup.php" method="POST">
+
+    <p><strong>Ваш логин</strong>:</p>
+    <input type="text" name="login" value="<?php echo @$data['login']; ?>" title="Введите логин">
+
+    <p><strong>Ваш пароль</strong>:</p>
+    <input type="password" name="password" value="<?php echo @$data['password']; ?>" title="Введите пароль">
+
+    <p><strong>Введите пароль еще раз</strong>:</p>
+    <input type="password" name="password_2" title="Повторите пароль">
+
+    <p><strong>Ваш Email</strong>:</p>
+    <input type="email" name="email" value="<?php echo @$data['email']; ?>" title="Введите email">
+
+    <p><strong>Ваше имя</strong>:</p>
+    <input type="text" name="name" value="<?php echo @$data['name']; ?>" title="Введите имя">
+
+
+    <p>
+        <button name="do_signup">Зарегистрироваться</button>
+    </p>
+
+</form>

@@ -1,0 +1,9 @@
+<form action="login.php" method="POST">
+    <p><strong>Логин</strong>:</p>
+    <input type="text" name="login" value="<?php echo @$data['login']; ?>" title="Введите логин">
+    <p><strong>Пароль</strong>:</p>
+    <input type="password" name="password" value="<?php echo @$data['password']; ?>" title="Введите пароль">
+    <p>
+        <button type="submit" name="do_login">Войти!</button>
+    </p>
+</form>
